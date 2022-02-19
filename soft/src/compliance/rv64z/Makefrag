@@ -1,0 +1,4 @@
+rv64z_test = \
+  Fencei
+
+rv64z_tests = $(addprefix rv64z-, $(rv64z_test))

@@ -1,0 +1,14 @@
+rv64b_test = \
+	andn-01 \
+	clmul-01 \
+	clmulh-01 \
+	orn-01 \
+	rol-01 \
+	rolw-01 \
+	ror-01 \
+	rori-01 \
+	roriw-01 \
+	rorw-01 \
+	xnor-01 \
+
+rv64b_tests = $(addprefix rv64b-, $(rv64b_test))

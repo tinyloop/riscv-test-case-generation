@@ -1,0 +1,5 @@
+build
+!soft/
+!Makefile
+!README.md
+!.gitignore
