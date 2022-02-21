@@ -13,8 +13,8 @@
 #endif
 
   .section ".text.init"
-  .globl rvtest_entry_point
-rvtest_entry_point:
+  .globl _start
+_start:
   li  x1, 0
   li  x2, 0
   li  x3, 0

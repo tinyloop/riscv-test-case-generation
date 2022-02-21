@@ -9,10 +9,10 @@ export PYTHON=$5
 export OFFSET=$6
 export BASEDIR=$7
 
-ELF2COE=$BASEDIR/soft/py/elf2coe.py
-ELF2DAT=$BASEDIR/soft/py/elf2dat.py
-ELF2MIF=$BASEDIR/soft/py/elf2mif.py
-ELF2HEX=$BASEDIR/soft/py/elf2hex.py
+ELF2COE=$BASEDIR/soft/py/64bit/elf2coe.py
+ELF2DAT=$BASEDIR/soft/py/64bit/elf2dat.py
+ELF2MIF=$BASEDIR/soft/py/64bit/elf2mif.py
+ELF2HEX=$BASEDIR/soft/py/64bit/elf2hex.py
 
 if [ ! -d "${BASEDIR}/build" ]; then
   mkdir ${BASEDIR}/build

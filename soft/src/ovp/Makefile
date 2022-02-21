@@ -8,10 +8,15 @@ include $(src_dir)/rv32c/Makefrag
 include $(src_dir)/rv32b/Makefrag
 include $(src_dir)/rv32m/Makefrag
 
+include $(src_dir)/rv64i/Makefrag
+include $(src_dir)/rv64c/Makefrag
+include $(src_dir)/rv64b/Makefrag
+include $(src_dir)/rv64m/Makefrag
+
 RISCV_GCC ?= $(RISCV)/riscv64-unknown-elf-gcc
 RISCV_GCC_OPTS ?= -static -mcmodel=medany -fvisibility=hidden -nostdlib -nostartfiles
 RISCV_INCL ?= -I $(src_dir)/env -I $(src_dir)/env/p -I $(src_dir)/../common/env
-RISCV_LINK_OPTS ?= -T $(src_dir)/../common/harvard.ld -D RVMODEL_ASSERT
+RISCV_LINK_OPTS ?= -T $(src_dir)/../common/ld/harvard.ld -D RVMODEL_ASSERT
 RISCV_OBJDUMP ?= $(RISCV)/riscv64-unknown-elf-objdump -Mnumeric,no-aliases --disassemble --disassemble-zeroes
 RISCV_OBJCOPY ?= $(RISCV)/riscv64-unknown-elf-objcopy -O binary
 RISCV_NM ?= $(RISCV)/riscv64-unknown-elf-nm -A
