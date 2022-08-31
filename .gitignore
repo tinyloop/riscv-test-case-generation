@@ -1,5 +1,3 @@
-build
-!soft/
-!Makefile
+!LICENSE
 !README.md
 !.gitignore
